@@ -1,4 +1,4 @@
-# Ridgeway Morris — team site
+# Mystic Valley Morris — team site
 
 A single-page, no-build-step site. Plain HTML/CSS/JS — no npm, no framework,
 so you can open it directly or preview it with any static server.

@@ -1,4 +1,4 @@
-// Ridgeway Morris — small progressive enhancement only.
+// Mystic Valley Morris — small progressive enhancement only.
 // The site works fully without this file; it just highlights
 // the current section in the nav as you scroll.
 
