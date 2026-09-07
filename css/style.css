@@ -9,6 +9,7 @@
   --green-dark: #150F1C;
   --gold: #C0392B;
   --ribbon: #7D2334;
+  --blue: #00008B;
 
   --font-display: "Fraunces", Georgia, serif;
   --font-body: "Inter", -apple-system, sans-serif;
@@ -156,6 +157,20 @@ p { margin: 0 0 1em; }
 }
 
 .btn--light:hover { background: #a5790a; }
+
+.btn--blue{
+  background: var(--blue);
+  color: var(--cream);
+}
+
+.btn--blue:hover { background: #006400}
+
+.btn--black{
+  background: #000000;
+  color: var(--cream);
+}
+
+.btn--black:hover { background: #666666}
 
 .hero__bells {
   margin-top: 2.5rem;
@@ -345,6 +360,14 @@ h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); color: var(--green); }
   max-width: 34rem;
 }
 
+.section__inner--center-2cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  max-width: 900px;   /* adjust to taste */
+  margin: 0 auto;
+}
+
 .join__title { color: var(--cream); }
 
 .join__sub { color: rgba(237, 230, 214, 0.75); }
@@ -360,4 +383,30 @@ h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); color: var(--green); }
 .site-footer a {
   text-decoration: none;
   color: var(--green);
+}
+
+.video-row {
+  display: flex;
+  flex-wrap: nowrap;         /* lets them stack on narrow screens */
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start; /* top-aligns them despite different heights */
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  aspect-ratio: 16 / 9;
+}
+.video-wrapper--short {
+  max-width: 200px;    /* narrower since it's vertical */
+  aspect-ratio: 9 / 16;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border: 3px solid #6a0dad;
 }
